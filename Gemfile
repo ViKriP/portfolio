@@ -48,4 +48,8 @@ group :test do
   gem 'selenium-webdriver'
 end
 
+group :production do
+  gem 'sendgrid-actionmailer'
+end
+
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
