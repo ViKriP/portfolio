@@ -31,7 +31,9 @@ gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'ffaker'
   gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
@@ -45,7 +47,13 @@ end
 group :test do
   gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
+  gem 'factory_bot_rails'
+  gem 'rails-controller-testing'
+  gem 'rspec'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers'
+  gem 'simplecov', require: false
 end
 
 group :production do
