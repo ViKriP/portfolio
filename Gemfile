@@ -3,12 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'activeadmin'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 # Use CoffeeScript for .coffee assets and views
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
+gem 'draper'
 gem 'haml-rails'
 gem 'i18n'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -17,6 +19,7 @@ gem 'jquery-rails'
 gem 'mini_magick', '~> 4.8'
 gem 'omniauth-facebook'
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'pundit'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
 # Use SCSS for stylesheets
