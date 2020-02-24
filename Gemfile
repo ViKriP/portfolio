@@ -24,6 +24,7 @@ gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'simple-line-icons-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Use Uglifier as compressor for JavaScript assets
