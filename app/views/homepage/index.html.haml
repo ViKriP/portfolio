@@ -37,25 +37,22 @@
       .col-sm-6
         .promo-block-divider
           %h1.promo-block-title
-            Alex
+            Viktor
             %br/
-            Teseira
-          %p.promo-block-text Web Designer & Front-end Developer
+            Danko
+          %p.promo-block-text Web Developer
         %ul.list-inline
           %li
-            %a.social-icons{:href => "#"}
+            %a.social-icons{:href => 'https://www.facebook.com', target: '_blank'}
               %i.icon-social-facebook
           %li
-            %a.social-icons{:href => "#"}
+            %a.social-icons{:href => 'https://twitter.com', target: '_blank'}
               %i.icon-social-twitter
           %li
-            %a.social-icons{:href => "#"}
+            %a.social-icons{:href => 'https://dribbble.com', target: '_blank'}
               %i.icon-social-dribbble
           %li
-            %a.social-icons{:href => "#"}
-              %i.icon-social-behance
-          %li
-            %a.social-icons{:href => "#"}
+            %a.social-icons{:href => 'https://www.linkedin.com', target: '_blank'}
               %i.icon-social-linkedin
     / // end row
 / ========== SLIDER ==========
@@ -70,33 +67,50 @@
           %p What I am all about.
       .col-sm-8.col-sm-offset-1
         .margin-b-60
-          %p I'm Alex Teseira, orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          %p I'm Viktor Danko, web developer.
         / Progress Box
         .progress-box
           %h5
             PHP
-            %span.color-heading.pull-right 87%
+            %span.color-heading.pull-right 35%
           .progress
-            .progress-bar.bg-color-base{"data-width" => "87", :role => "progressbar"}
+            .progress-bar.bg-color-base{"data-width" => "35", :role => "progressbar"}
         .progress-box
           %h5
-            HTML5
-            %span.color-heading.pull-right 96%
+            HTML
+            %span.color-heading.pull-right 90%
           .progress
-            .progress-bar.bg-color-base{"data-width" => "96", :role => "progressbar"}
+            .progress-bar.bg-color-base{"data-width" => "90", :role => "progressbar"}
+        .progress-box
+          %h5
+            CSS
+            %span.color-heading.pull-right 45%
+          .progress
+            .progress-bar.bg-color-base{"data-width" => "45", :role => "progressbar"}
         .progress-box
           %h5
             JavaSript
-            %span.color-heading.pull-right 52%
+            %span.color-heading.pull-right 15%
           .progress
-            .progress-bar.bg-color-base{"data-width" => "52", :role => "progressbar"}
+            .progress-bar.bg-color-base{"data-width" => "15", :role => "progressbar"}
         .progress-box
           %h5
-            Photoshop
-            %span.color-heading.pull-right 77%
+            Ruby on Rails
+            %span.color-heading.pull-right 30%
           .progress
-            .progress-bar.bg-color-base{"data-width" => "77", :role => "progressbar"}
+            .progress-bar.bg-color-base{"data-width" => "30", :role => "progressbar"}
+        .progress-box
+          %h5
+            Databases -  PostgreSQL, MySQL, SQLite, MongoDB
+            %span.color-heading.pull-right 60%
+          .progress
+            .progress-bar.bg-color-base{"data-width" => "60", :role => "progressbar"}
+        .progress-box
+          %h5
+            Lazarus
+            %span.color-heading.pull-right 75%
+          .progress
+            .progress-bar.bg-color-base{"data-width" => "75", :role => "progressbar"}
         / End Progress Box
     / // end row
 / End About
@@ -124,7 +138,7 @@
                 .service-element
                   %i.service-icon.color-white.icon-screen-tablet
                 .service-info
-                  %h3.color-white Photoshop
+                  %h3.color-white Ruby on Rails
                   %p.color-white.margin-b-5 Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor
                 %a.content-wrapper-link{:href => "#"}
             .col-md-4
@@ -145,7 +159,6 @@
       .col-sm-3.sm-margin-b-30
         .text-right.sm-text-left
           %h2.margin-b-0 Works
-          %p I build the real value.
       .col-sm-8.col-sm-offset-1
         / Masonry Grid
         .masonry-grid.row.row-space-2
@@ -154,18 +167,41 @@
             / Work
             .work.work-popup-trigger
               .work-overlay
-                = image_tag('img/800x400/01.jpg', class: 'full-width img-responsive', alt: 'Portfolio Image')
+                = image_tag('img/800x400/01.png', class: 'full-width img-responsive', alt: 'Portfolio Image')
               .work-popup-overlay
                 .work-popup-content
                   %a.work-popup-close{:href => "javascript:void(0);"} Hide
                   .margin-b-30
-                    %h3.margin-b-5 Art Of Coding
-                    %span Clean & Minimalistic Design
+                    %h3.margin-b-5 Bookstore
+                    %span web store
                   .row
                     .col-sm-8.work-popup-content-divider.sm-margin-b-20
                       .margin-t-10.sm-margin-t-0
-                        %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                        %p
+                          Online store for book sales.
+                          %br/
+                          Capabilities:
+                          %br/
+                          * Sign up (via email or Facebook)
+                          %br/
+                          * View book catalog
+                          %br/
+                          * Detailed book description
+                          %br/
+                          * Leave a review about the book
+                          %br/
+                          * Buying a book
+                          %br/
+                          * Tracking order movement
+                          %br/
+                          * Best Sellers
+                          %br/
+                          %br/
+                          The administrative panel allows you to manage:
+                          %br/
+                          * user, author, book, order, review, discount tax.
+                        %p The project was developed as one of the tasks of the Ruby / Ruby on Rails course from RubyGarage.
+                        %br/
                         %ul.list-inline.work-popup-tag
                           %li.work-popup-tag-item
                             %a.work-popup-tag-link{:href => "#"} Design,
@@ -176,23 +212,79 @@
                     .col-sm-4
                       .margin-t-10.sm-margin-t-0
                         %p.margin-b-5
-                          %strong Project Leader:
-                          John Doe
+                          %strong Example:
+                          %a{href: 'http://good-bookstore.herokuapp.com', target: '_blank'} Heroku
                         %p.margin-b-5
-                          %strong Designer:
-                          Alisa Keys
-                        %p.margin-b-5
-                          %strong Developer:
-                          Mark Doe
-                        %p.margin-b-5
-                          %strong Customer:
-                          Keenthemes
+                          %strong Source code:
+                          %a{href: 'https://github.com/ViKriP/bookstore/tree/develop', target: '_blank'} GitHub
+                        %br/
+                        %p
+                          %strong Technologies involved
+                          %br/
+                          Ruby on Rails
+                          %br/
+                          PostgreSQL
+                          %br/
+                          OmniAuth
+                          %br/
+                          Amazon S3
+                          %br/
+                          SendGrid
+                          %br/
+                          Git
+                          %br/
+                          RSpec
             / End Work
           .masonry-grid-item.col-xs-12.col-sm-6.col-md-4.margin-b-4
             / Work
             .work.work-popup-trigger
               .work-overlay
-                = image_tag('img/397x400/01.jpg', class: 'full-width img-responsive', alt: 'Portfolio Image')
+                = image_tag('img/397x400/01.png', class: 'full-width img-responsive', alt: 'Portfolio Image')
+              .work-popup-overlay
+                .work-popup-content
+                  %a.work-popup-close{:href => "javascript:void(0);"} Hide
+                  .margin-b-30
+                    %h3.margin-b-5 TodoListApi
+                    %span API Documentation
+                  .row
+                    .col-sm-8.work-popup-content-divider.sm-margin-b-20
+                      .margin-t-10.sm-margin-t-0
+                        %p Implemented all scenarios of "To Do list" ​ back-end part only​ (API, endpoints) in a volume sufficient for completing these scenarios by front-end developer.
+                        %p The project was developed as one of the tasks of the Ruby / Ruby on Rails course from RubyGarage.
+                        %ul.list-inline.work-popup-tag
+                          %li.work-popup-tag-item
+                            %a.work-popup-tag-link{:href => "#"} Design,
+                          %li.work-popup-tag-item
+                            %a.work-popup-tag-link{:href => "#"} Coding,
+                          %li.work-popup-tag-item
+                            %a.work-popup-tag-link{:href => "#"} Portfolio
+                    .col-sm-4
+                      .margin-t-10.sm-margin-t-0
+                        %p.margin-b-5
+                          %strong Example:
+                          %a{href: 'https://todolist-api-rg.herokuapp.com', target: '_blank'} Heroku
+                        %p.margin-b-5
+                          %strong Source code:
+                          %a{href: 'https://github.com/ViKriP/TodoListApi/tree/develop', target: '_blank'} GitHub
+                        %br/
+                        %p
+                          %strong Technologies involved
+                          %br/
+                          Ruby on Rails
+                          %br/
+                          PostgreSQL
+                          %br/
+                          Dox
+                          %br/
+                          RSpec
+                          %br/
+                          Git
+            / End Work
+          .masonry-grid-item.col-xs-12.col-sm-6.col-md-4.md-margin-b-4
+            / Work
+            .work.work-popup-trigger
+              .work-overlay
+                = image_tag('img/397x300/01.png', class: 'full-width img-responsive', alt: 'Portfolio Image')
               .work-popup-overlay
                 .work-popup-content
                   %a.work-popup-close{:href => "javascript:void(0);"} Hide
@@ -230,45 +322,7 @@
             / Work
             .work.work-popup-trigger
               .work-overlay
-                = image_tag('img/397x300/01.jpg', class: 'full-width img-responsive', alt: 'Portfolio Image')
-              .work-popup-overlay
-                .work-popup-content
-                  %a.work-popup-close{:href => "javascript:void(0);"} Hide
-                  .margin-b-30
-                    %h3.margin-b-5 Art Of Coding
-                    %span Clean & Minimalistic Design
-                  .row
-                    .col-sm-8.work-popup-content-divider.sm-margin-b-20
-                      .margin-t-10.sm-margin-t-0
-                        %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                        %ul.list-inline.work-popup-tag
-                          %li.work-popup-tag-item
-                            %a.work-popup-tag-link{:href => "#"} Design,
-                          %li.work-popup-tag-item
-                            %a.work-popup-tag-link{:href => "#"} Coding,
-                          %li.work-popup-tag-item
-                            %a.work-popup-tag-link{:href => "#"} Portfolio
-                    .col-sm-4
-                      .margin-t-10.sm-margin-t-0
-                        %p.margin-b-5
-                          %strong Project Leader:
-                          John Doe
-                        %p.margin-b-5
-                          %strong Designer:
-                          Alisa Keys
-                        %p.margin-b-5
-                          %strong Developer:
-                          Mark Doe
-                        %p.margin-b-5
-                          %strong Customer:
-                          Keenthemes
-            / End Work
-          .masonry-grid-item.col-xs-12.col-sm-6.col-md-4.md-margin-b-4
-            / Work
-            .work.work-popup-trigger
-              .work-overlay
-                = image_tag('img/397x300/02.jpg', class: 'full-width img-responsive', alt: 'Portfolio Image')
+                = image_tag('img/397x300/02.png', class: 'full-width img-responsive', alt: 'Portfolio Image')
               .work-popup-overlay
                 .work-popup-content
                   %a.work-popup-close{:href => "javascript:void(0);"} Hide
@@ -356,16 +410,16 @@
           .row
             .col-md-3.col-xs-6.md-margin-b-30
               %h5 Location
-              %a{:href => "#"} Brookyln, New York
+              %a{:href => "#"} Dnepr, Ukraine
             .col-md-3.col-xs-6.md-margin-b-30
               %h5 Phone
-              %a{:href => "#"} +77 234 548 00 00
+              %a{:href => "#"} +12 345 678 91 23
             .col-md-3.col-xs-6
               %h5 Email
-              %a{:href => "mailto:#"} alex.teseira@gmail.com
+              %a{:href => "mailto:#"} example@gmail.com
             .col-md-3.col-xs-6
               %h5 Web
-              %a{:href => "#"} alex.teseira.com
+              %a{:href => "#"} example.com
       / // end row
 / End Contact
 / ========== END PAGE LAYOUT ==========
