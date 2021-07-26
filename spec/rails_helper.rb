@@ -7,7 +7,6 @@ require 'rspec/rails'
 require 'devise'
 require 'capybara/rails'
 require 'capybara/rspec'
-require 'chromedriver-helper'
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 

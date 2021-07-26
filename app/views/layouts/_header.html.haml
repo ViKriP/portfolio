@@ -1,0 +1,56 @@
+%header.header.navbar-fixed-top
+  / Navbar
+  %nav.navbar{:role => "navigation"}
+    .container
+      / Brand and toggle get grouped for better mobile display
+      .menu-container.js_nav-item
+        %button.navbar-toggle{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.toggle-icon
+        / Logo
+        .logo
+          %a.logo-wrap{:href => "#body"}
+            = image_tag('img/logo.png', class: 'logo-img logo-img-main', alt: 'Portfolio Logo')
+            = image_tag('img/logo-dark.png', class: 'logo-img logo-img-active', alt: 'Portfolio Logo')
+        / End Logo
+      / Collect the nav links, forms, and other content for toggling
+      .collapse.navbar-collapse.nav-collapse
+        .menu-container
+          - if user_signed_in?
+            %ul.nav.navbar-nav.navbar-nav-right
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#body"} Home
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#about"} About
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#experience"} Experience
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#work"} Work
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#contact"} Contact
+          - else 
+            %ul.nav.navbar-nav.navbar-nav-right
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#body"} Home
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#about"} About
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#experience"} Experience
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#work"} Work
+              %li.js_nav-item.nav-item
+                %a.nav-item-child.nav-item-hover{:href => "#contact"} Contact
+              %li.js_nav-item.nav-item
+                %a.dropdown-toggle.nav-item-child.nav-item-hover{href: "#", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false"}= t('account')
+                %ul.dropdown-menu
+                  %li
+                    = link_to t('login'), new_user_session_path, class: "collapse-link"
+                  %li
+                    = link_to t('signup'), new_user_registration_path, class: "collapse-link"
+                  %li
+                    %a.nav-item-child.nav-item-hover{:href => "#"} Log In                      
+                  %li
+                    %a.nav-item-child.nav-item-hover{:href => "#"} Sign Up                      
+      / End Navbar Collapse
+  / Navbar
+/ ========== END HEADER ==========

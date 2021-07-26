@@ -1,19 +1,19 @@
-default: &default
-  adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-  host: localhost
-  username: <%= Rails.application.credentials.db_user_name %>
-  password: <%= Rails.application.credentials.db_password %>
+  default: &default
+    adapter: postgresql
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    timeout: 5000
+    host: localhost
+    username: <%= Rails.application.credentials.db_user_name %>
+    password: <%= Rails.application.credentials.db_password %>
 
-development:
-  <<: *default
-  database: portfolio_development
+  development:
+    <<: *default
+    database: portfolio_development
 
-test:
-  <<: *default
-  database: portfolio_test
+  test:
+    <<: *default
+    database: portfolio_test
 
-production:
-  <<: *default
-database: portfolio_production
+  production:
+    <<: *default
+    database: portfolio_production
