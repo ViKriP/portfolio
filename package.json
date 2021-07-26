@@ -12,11 +12,11 @@
     "gulp": "^4.0.2",
     "gulp-haml": "^1.0.1",
     "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^5.0.0"
   },
   "description": "",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.6.0",
     "jquery-mask-plugin": "^1.14.16"
   }
 }
