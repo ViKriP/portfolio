@@ -5,12 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": "^16.5.0",
+    "npm": "^7.19.1"
+  },
   "author": "Viktor",
   "license": "ISC",
   "devDependencies": {
     "bootstrap-sass": "^3.4.1",
-    "gulp": "^4.0.2",
-    "gulp-haml": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-haml": "^0.0.8",
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^5.0.0"
   },
